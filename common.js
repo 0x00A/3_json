@@ -41,12 +41,7 @@ export function anchor(href, text, style) {
     let a = document.createElement("a");
     a.href = href;
     a.textContent = text || href;
-    if (style) {
-        a.style = style;
-        console.log(a.style);
-    }
-
-    console.log(a);
+    if (style) a.style = style;
     return a;
 }
 
