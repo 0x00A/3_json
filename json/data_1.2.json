@@ -1,0 +1,24 @@
+{
+    "nimi": "Digitekniikat",
+    "osallistujat": [
+        {
+            "nimi": "Jaakko"
+        },
+        {
+            "nimi": "Seppo"
+        },
+        {
+            "nimi": "Liisa"
+        },
+        {
+            "nimi": "Tiina"
+        },
+        {
+            "nimi": "Kalle"
+        }
+    ],
+    "alkupvm": "18.08.2025",
+    "loppupvm": "12.10.2025",
+    "kesto_vk": 8,
+    "kuva": "assets/toteutus.png"
+}
