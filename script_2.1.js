@@ -67,8 +67,6 @@ async function main() {
     vastaus_div.style.maxWidth = "90%";
     vastaus_div.style.margin = "3rem auto";
     vastaus_div.style.fontSize = "1.5rem";
-
-    return;
 }
 
 main();
