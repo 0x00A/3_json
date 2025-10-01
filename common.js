@@ -55,3 +55,10 @@ export function div(style) {
     if (style) div.style = style;
     return div;
 }
+
+export function button(text, style) {
+    let btn = document.createElement("button");
+    btn.textContent = text;
+    if (style) btn.style = style;
+    return btn;
+}

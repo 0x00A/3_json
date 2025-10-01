@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Etusivu</title>
+    <title>teht2_1</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <!-- CSS tyylit -->
@@ -17,14 +17,14 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <script type="module" src="script_1.1.js" defer></script>
+    <script type="module" src="script_2.1.js"></script>
 </head>
 
 <body>
     <!-- navigointipalkki -->
     <nav class="navbar navbar-expand-xl bg-dark navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">JSON</a>
+            <a class="navbar-brand" href="index.html">JSON</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,13 +32,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Etusivu (tehtävä 1.1)</a>
+                        <a class="nav-link" href="index.html">Etusivu (tehtävä 1.1)</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="teht1_2.html">Tehtävä 1.2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="teht2_1.html">Tehtävä 2 (molemmat osat)</a>
+                        <a class="nav-link active" href="#">Tehtävä 2 (molemmat osat)</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">Sivu 4</a>
@@ -48,7 +48,22 @@
         </div>
     </nav>
 
-    <div id="vastaus"></div>
+    <div id="vastaus">
+        <h1>Pokemon Haku</h1>
+        <div style="display: flex; gap: 0.1rem">
+            <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
+            <br>
+            <button id="searchBtn">Hae</button>
+        </div>
+        <div id="pokemonData"></div>
+        <div>
+            Esimerkkejä pokemon nimistä
+            <ul>
+                <li>mew</li>
+                <li>eevee</li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
