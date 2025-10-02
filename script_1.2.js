@@ -40,7 +40,7 @@ async function main() {
     target_div.appendChild(paragraph(`${data.kesto_vk} viikkoa`));
 
     // kuva
-    target_div.appendChild(image(data.kuva, "kuva"));
+    target_div.appendChild(image(data.kuva, "kuva", "max-width: 100%; height: auto;"));
 
     // tyyli
     target_div.style.backgroundColor = "#c0c0c0d7";
