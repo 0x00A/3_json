@@ -31,13 +31,13 @@ async function main() {
     target.appendChild(image(data.kuva, "Kuva toimistotilasta", "width: 100%; margin: auto;"));
 
     // opintojakson teidot
-    target.appendChild(header(3, "Opintojakso", "margin: 1rem auto 0.5rem auto;"));
+    target.appendChild(header(2, "Opintojakso", "margin: 1rem auto 0.5rem auto;"));
     for (let kv of Object.entries(data.opintojakso)) {
         target.appendChild(paragraph(`${kv[0]}: ${kv[1]}`, "margin: auto;"));
     }
 
     // aiheet
-    target.appendChild(header(3, "Aiheet"));
+    target.appendChild(header(2, "Aiheet"));
     for (let tekniikka of Object.values(data.tekniikat)) {
         target.appendChild(paragraph(`Aihe: ${tekniikka.aihe}`, "margin-bottom: 0; font-weight: bold;"));
         target.appendChild(anchor(tekniikka.linkki, tekniikka.linkki, "margin-bottom: 0.25rem;"));

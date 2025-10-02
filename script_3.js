@@ -27,18 +27,18 @@ async function main() {
     let now = new Date();
     target.appendChild(paragraph(`Sää kello ${now.getHours()}:${now.getMinutes()}`));
 
-    target.appendChild(header(3, "Sää:"));
+    target.appendChild(header(2, "Sää:"));
 
     // en ole varma onko data aina olemassa, joten ollaan varovaisia ja tarkistetaan jokainen
     let desc = data?.weather?.[0]?.description || "ei tietoa";
     target.appendChild(paragraph(desc));
 
-    target.appendChild(header(3, "Lämpötila:"));
+    target.appendChild(header(2, "Lämpötila:"));
     // jotta 0 arvo näkyy oikein
     let temp = data?.main?.temp ?? null;
     target.appendChild(paragraph(temp ? `${temp} °C` : "ei tietoa"));
 
-    target.appendChild(header(3, "Tuuli:"));
+    target.appendChild(header(2, "Tuuli:"));
     // sama juttu
     let wind = data?.wind?.speed ?? null;
     target.appendChild(paragraph(wind ? `${wind} m/s` : "ei tietoa"));
