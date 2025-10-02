@@ -25,7 +25,10 @@ async function main() {
 
     // kellopnaika
     let now = new Date();
-    target.appendChild(paragraph(`Sää kello ${now.getHours()}:${now.getMinutes()}`));
+    let time = now.toLocaleTimeString("fi-FI", { hour: '2-digit', minute: '2-digit' });
+    // fi-Fi localessa erottimena piste, mielestäni kaksoispiste on selkeämpi
+    time = time.split(".").join(":");
+    target.appendChild(paragraph(`Sää kello ${time}`));
 
     target.appendChild(header(2, "Sää:"));
 
@@ -42,6 +45,13 @@ async function main() {
     // sama juttu
     let wind = data?.wind?.speed ?? null;
     target.appendChild(paragraph(wind ? `${wind} m/s` : "ei tietoa"));
+
+    let icon = data?.weather?.[0]?.icon || null;
+    if (icon) {
+        // https://openweathermap.org/weather-conditions
+        let icon_url = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+        target.appendChild(image(icon_url, "Sään ikoni"));
+    }
 }
 
 main();
